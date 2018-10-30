@@ -1,0 +1,346 @@
+@charset "utf-8";
+/*100%或none 移动端关闭字体大小自动调整功能*/
+body { -webkit-text-size-adjust:none;}
+
+/* 移动端禁止长按链接与图片弹出系统默认菜单 */
+a,img { border:none;-webkit-touch-callout: none;}
+
+/*禁用了复制粘贴功能*/
+/*body{-webkit-user-select: none;}*/
+
+/*修正chrome表单自动填充后,input文本框的背景会变成偏黄色的 */
+input:-webkit-autofill {-webkit-box-shadow: 0 0 0px 1000px white inset;background-color:transparent;}
+
+/*================================基本信息==============================*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset,form, label, legend, table, caption, tbody,tfoot, thead, tr, th, td, article, aside,canvas, details, embed, figure, figcaption,footer, header, hgroup, menu, nav, output,ruby, section, summary, time, mark, audio,video,input{ margin:0; padding:0; }
+body{ font-family:'Microsoft YaHei',"微软雅黑", Arial, "Segoe UI", sans-serif; font-size:12px; line-height:1.6em; color:#333; }
+ul,ol,dl,li,dt,dd { list-style:none; }
+a:focus,a,a:hover{text-decoration: none;}
+
+/*a {color:#333; text-decoration:none; -webkit-transition:all .5s ease; -webkit-tap-highlight-color: rgba(0,0,0,0);}*/
+/*a:hover { -webkit-transition:all .5s ease; }*/
+.clearfix{zoom:1;}
+.clearfix:after{content: ".";display: block;height: 0;clear: both;visibility: hidden;font-size: 0;}
+i {display: inline-block;}
+input:focus, a:focus, summary:focus, select:focus, textarea:focus { outline:none; }
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #999;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #999;
+}
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+    color: #999;
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #999;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none !important;
+}
+input[type="number"]{-moz-appearance:textfield;}
+
+
+/*@font-face{
+	font-family: myFirstFont;
+	src:
+	url('../fonts/兰亭黑简.ttf'),
+	url('../fonts/兰亭细黑 GBK.ttf'),
+	url('../fonts/兰亭黑简.eot'),
+	url('../fonts/兰亭细黑 GBK.eot'); /* IE9+ */
+/*}*/
+/*body, td, th, samp, dfn ,input,h4{ font-family: 'myFirstFont';}*/
+.fr{float: right}
+.fl{float:left}
+
+
+/*菜单栏样式*/
+#menu { position: fixed; right: 20px; top: 40%; margin: -160px 0 0; padding: 0; list-style-type: none; z-index: 70;}
+#menu li { margin-top: 10px; font: 14px "Microsoft Yahei";}
+#menu a { display: block;background-color: #fff; color: #0074EA; text-align: center; text-decoration: none;border-radius: 50%;width: 20px;height: 20px;}
+#menu .active a { color: #fff; background-color: rgba(196, 190, 190,0.5);}
+/*首页*/
+body{
+	background:#fff;
+}
+canvas{position: fixed;}
+.section_center{z-index: 999; width: 1024px;height: 100vh;position: relative;margin: 0 auto;left: 0;right: 0;top: 0;bottom: 0;text-align: center;display: flex;justify-content: space-between;}
+.section_center .logo{position: absolute;left: 0;top: 20px;width: 100%;text-align: left;}
+.section_center .logo img{vertical-align: top;}
+.section_center .image{position: absolute;}
+.section_center .container{position: relative;width: 100%;}
+
+/*.container{width: 100%; position: fixed; top: 50%;transform: translateY(-50%);}*/
+/*首屏*/
+.image{opacity: 0;}
+.section1 .image{position: static;}
+.section1 .img01{text-align: center;width: 100%;padding-top: 10%;}
+.section1 .img02,.section1 .img03,.section1 .img04{width: 33%;text-align: center;float: left;margin-top: 3%;}
+/*第二屏*/
+.section2 .title{text-align: center;width: 100%;top: 100px;}
+.section2 .img11{width: 100%;text-align: center;top: 382px;}
+.section2 .img12{left: 173px;top: 146px;}
+.section2 .img13{left: 161px;top: 230px;}
+.section2 .img14{right: 200px;top: 172px;}
+.section2 .img15{right: 305px;top: 255px;}
+.section2 .img16{right: 140px;top: 255px;}
+.section2 .img17{right: 185px;top: 300px;}
+.section2 .container{width:100%;position: relative;top: 55%;transform: translateY(-50%);-webkit-transform: translateY(-50%);}
+.link{ width: 100%;text-align: center;bottom: 20px;}
+
+/*第三屏*/
+.section3 .container{width:100%;position: relative;top: 55%;transform: translateY(-50%);-webkit-transform: translateY(-50%);}
+.section3 .image{width: 100%;text-align: center;}
+.section3 .img20{top: 100px;right: -23px;}
+.section3 .img21{top: 150px;}
+.section3 .img22{top: 215px;}
+.section3 .img23{right: -304px;top: 271px;}
+.section3 .img24{top: 321px;left: -71px;}
+.section3 .img25{top: 274px;left: -71px;}
+/*第四屏*/
+.section4 .text{display: flex;flex: 2;margin-top: 13vh;}
+.section4 .text .contact{flex: 1;text-align: left;padding:56px 0 56px 70px;line-height: 1.5;opacity: 0;}
+.section4 .text .img30{text-align: center;}
+.section4 .titles{font-size: 20px;}
+.section4 .txt{line-height: 2;font-size: 18px;}
+.section4 .contact .txt{font-size: 18px;line-height: 1.5;}
+.section4 .swiper-container{height: 200px;}
+.section4 .swiper-pagination{bottom: 0;}
+.section4 .swiper-button-prev, .swiper-container-rtl .swiper-button-next{background: url(../img/left.png) no-repeat;}
+.section4 .swiper-button-next, .swiper-container-rtl .swiper-button-prev{background: url(../img/right.png) no-repeat;}
+.section4 .swiper-button-next, .swiper-button-prev{margin-top: -50px;}
+.section4 .swiper-slide img{margin: 0 20px;}
+.section4 #container{position: relative;bottom: 10px;opacity: 0;}
+  /*第五屏*/
+ .section5 .opacity{opacity: 0;}
+.section5 .content{position: relative;top: 50%;margin-top: -20%;text-align: center;width: 100%;}
+.section5 .text{line-height: 1.5;}
+.section5 a.text{font-size: 24px;margin-bottom: 30px;display: block;color: #333333;text-decoration: underline;}
+.section5 p.text{font-size: 22px;}
+.section5 img{margin: 10px;}
+/*动画*/
+
+/*首屏动画*/
+.section1 .anim0_1{
+	animation: scalx 1s;
+	 -webkit-animation: scalx 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+	-webkit-animation-delay: 0s;	
+}
+.section1 .anim0_2{
+	animation: fadeInLeft 1s;
+	 -webkit-animation: fadeInLeft 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+	-webkit-animation-delay: 1s;	
+}
+.section1 .anim0_3{
+	animation: scalx 1s;
+	 -webkit-animation: scalx 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+	-webkit-animation-delay: 1s;	
+}
+.section1 .anim0_4{
+	animation: fadeInRight 1s;
+	 -webkit-animation: fadeInRight 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+	-webkit-animation-delay: 1s;	
+}
+/*第二屏动画*/
+.section2 .anim1_1{
+	animation: fadeInDown 1s;
+	 -webkit-animation: fadeInDown 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+	-webkit-animation-delay: 0s;	
+}
+.section2 .anim1_2{
+	animation: fadeIn 1s;
+	 -webkit-animation: fadeIn 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    animation-delay: .5s;
+	-webkit-animation-delay: .5s;	
+}
+.section2 .anim1_3{
+	animation: scalx 1s;
+	 -webkit-animation: scalx 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+	-webkit-animation-delay: 1s;	
+}
+.section2 .anim1_4{
+	animation: fadeIn 1s;
+	 -webkit-animation: fadeIn 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+	-webkit-animation-delay: 1.5s;	
+}
+.section2 .anim1_5{
+	animation:  fadeInUp 1s;
+	 -webkit-animation:  fadeInUp 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+	-webkit-animation-delay: 2s;	
+}
+
+/*第三屏动画*/
+.section3 .anim1_0{
+	animation: fadeInDown 1s;
+	 -webkit-animation: fadeInDown 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+	-webkit-animation-delay: 0s;	
+}
+.section3 .anim1_1{
+	animation: fadeInDown 1s;
+	 -webkit-animation: fadeInDown 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    animation-delay: .5s;
+	-webkit-animation-delay: .5s;	
+}
+
+.section3 .anim1_2{
+	animation: scal 1s;
+	 -webkit-animation: scal 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+	-webkit-animation-delay: 1s;	
+}
+
+.section3 .anim1_3{
+	animation: fadeInUp 1s;
+	 -webkit-animation: fadeInUp 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+	-webkit-animation-delay: 1.5s;	
+}
+.section3 .anim1_5{
+	animation: scalx 1s;
+	 -webkit-animation: scalx 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    animation-delay: 1.3s;
+	-webkit-animation-delay: 1.3s;	
+}
+/*第四屏动画*/
+.section4 .ani1_1{
+	animation:  fadeInLeft 1s;
+	 -webkit-animation:  fadeInLeft 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+	-webkit-animation-delay: 0s;	
+}
+.section4 .ani1_2{
+	animation:  fadeInRight 1s;
+	 -webkit-animation:  fadeInRight 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+	-webkit-animation-delay: 0s;	
+}
+.section4 .ani1_3{
+	animation:  scalx 1s;
+	 -webkit-animation:  scalx 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+	-webkit-animation-delay: 1s;	
+}
+
+/*第五屏动画*/
+.section5 .ani1_1{
+	animation:  fadeInDown 1s;
+	 -webkit-animation:  fadeInDown 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    animation-delay: .5s;
+	-webkit-animation-delay: .5s;	
+}
+.section5 .ani1_2{
+	animation:  fadeInDown 1s;
+	 -webkit-animation:  fadeInDown 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    animation-delay: .5s;
+	-webkit-animation-delay: .5s;		
+}
+.section5 .ani1_3{
+	animation:  scalx 1s;
+	 -webkit-animation:  scalx 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+	-webkit-animation-delay: 1s;	
+}
+.section5 .ani1_4{
+	animation:  scalx 1s;
+	 -webkit-animation:  scalx 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+	-webkit-animation-delay: 1s;	
+}
+.section5 .ani1_5{
+	animation:  fadeInUp 1s;
+	 -webkit-animation:  fadeInUp 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+	-webkit-animation-delay: 1.5s;	
+}
+
+.anim_link{
+	animation: fadeInUp 1s;
+	 -webkit-animation: fadeInUp 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+	-webkit-animation-delay: 0s;	
+}
+
+/*动画帧*/
+/*小到大*/
+@keyframes scalx{
+	0%{opacity: 0;transform: scale(0);}
+	50{opacity: 1;transform: scale(0.5);}
+	100%{opacity: 1;transform: scale(1);}
+}
+@-webkit-keyframes scalx{
+	0%{opacity: 0;-webkit-transform: scale(0);}
+	50{opacity: 1;-webkit-transform: scale(0.5);}
+	100%{opacity: 1;-webkit-transform: scale(1);}
+}
+
+/*大到小*/
+@keyframes scal{
+	0%{opacity: 0;transform: scale(4);}
+	50{opacity: 1;transform: scale(2);}
+	100%{opacity: 1;transform: scale(1);}
+	
+}
+@-webkit-keyframes scal{
+	0%{opacity: 0;-webkit-transform: scale(4);}
+	50{opacity: 1;-webkit-transform: scale(2);}
+	100%{opacity: 1;-webkit-transform: scale(1);}
+}
